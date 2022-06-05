@@ -1,0 +1,50 @@
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.sectionTitle{
+  border-bottom: 1px dashed #dedede;
+  margin: 30px 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.btn{
+  appearance: none;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 50px;
+  background-color: #3d98b4;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.2);
+  transition: opacity .4s;
+  &:hover{
+    opacity: .4;
+  }
+}
+
+.btn-02{
+  &__sub{
+    display: block;
+    font-size: 0.85em;
+  }
+
+  &__main{
+    font-size: 20px;
+    letter-spacing: 0.2em;
+  }
+}
+
+select{
+  padding: 10px 30px 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
