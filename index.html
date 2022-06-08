@@ -23,31 +23,86 @@
     </div>
     <!-- /header__top-only-wrapper -->
 
-    <div class="mainvisual"> </div>
+    <div class="mainvisual"> 
+      <picture>
+        <source media="(max-width:767px)" srcset="images/bg_top_header_sp.jpg">
+        <source media="(min-width:768px)" srcset="images/bg_top_header.jpg">
+        <img src="images/bg_top_header_sp.jpg" alt="" height="200">
+      </picture>
+    </div>
 
-    <nav class="gnav">
-      <ul class="gnav__list">
-        <li class="gnav__item"><a href="#" class="gnav__link">商品一覧</a></li>
-        <li class="gnav__item"><a href="#" class="gnav__link">ねこブログ</a></li>
-        <li class="gnav__item"><a href="#" class="gnav__link">ねこ店員紹介</a></li>
-        <li class="gnav__item"><a href="#" class="gnav__link">よくあるご質問</a></li>
-        <li class="gnav__item"><a href="#" class="gnav__link">お問い合わせ</a></li>
+    <div id="spNav" class="sp-nav__wrapper">
+      <figure class="sp-nav__logo footer__logo">
+        <img src="images/logo_small.svg" alt="ハンドメイド猫グッズのお店">
+      </figure>
+
+      <nav class="sp-nav__body sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">トップページ</a></li>
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">商品一覧</a></li>
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">ねこブログ</a></li>
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">ねこ店員紹介</a></li>
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">よくあるご質問</a></li>
+          <li class="sp-nav__list"><a href="#" class="sp-nav__link">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <div class="sp-nav__sub-link-wrapper">
+        <a href="#" class="sp-nav__low">特定商取引法に関する表記</a>
+        <a href="#" class="sp-nav__policy">プライバシーポリシー</a>
+      </div>
+
+    </div>
+    <!-- /sp-nav__wrapper -->
+    <div id="tglBtn" class="menuBtn">menu</div>
+
+
+    <nav class="pc-gnav bg--color">
+      <ul class="pc-gnav__list inner">
+        <li class="pc-gnav__item"><a href="#" class="pc-gnav__link">商品一覧</a></li>
+        <li class="pc-gnav__item"><a href="#" class="pc-gnav__link">ねこブログ</a></li>
+        <li class="pc-gnav__item"><a href="#" class="pc-gnav__link">ねこ店員紹介</a></li>
+        <li class="pc-gnav__item"><a href="#" class="pc-gnav__link">よくあるご質問</a></li>
+        <li class="pc-gnav__item"><a href="#" class="pc-gnav__link">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <div class="inner">
+
+    <section class="inner">
 
       <article class="news">
-        <span class="cat-icon"></span><h2 class="article-heading topPage-title">お知らせ</h2><span class="to-archive">一覧へ</span>
+        <div class="article-heading__wrapper">
+          <h2 class="article-heading topPage-title">お知らせ<span class="to-archive">一覧へ</span></h2>
+        </div>
   
         <div class="news__list-wrapper">
           <ul class="news__list">
             <li class="news__item"><time data="2021-11-01" class="news__posted">2021-11-01</time></li>
-            <li class="news__item"><span class="news__label">新商品情報</span></li>
+            <li class="news__item"><span class="news__label label--new">新商品情報</span></li>
             <li class="news__item"><a href="#" class="news__link">【焼印付】爪とぎ型キーホルダー登場！</a></li>
           </ul>
+
+          <!-- <table class="news__list">
+            <tr>
+              <td class="news__posted"><time data="2021-11-01" class="news__posted">2021-11-01</time></td>
+              <td class="news__label label--new">新商品情報</td>
+              <td class="news__link"><a href="">【焼印付】爪とぎ型キーホルダー登場！</a></td>
+            </tr>
+
+            <tr>
+              <td class="news__posted"><time data="2021-11-01" class="news__posted">2021-11-01</time></td>
+              <td class="news__label">入荷情報</td>
+              <td class="news__link"><a href="">里親募集型猫カフェ猫式さんの委託販売ブースにアクセサリー・猫首輪・けりぐるみを納品しました。</a></td>
+            </tr>
+
+            <tr>
+              <td class="news__posted"><time data="2021-11-01" class="news__posted">2021-11-01</time></td>
+              <td class="news__label">イベント出店</td>
+              <td class="news__link"><a href="">ニャンフェス14に参加決定。鋭意新作製作中です</a></td>
+            </tr>
+          </table> -->
     
           <ul class="news__list">
             <li class="news__item"><time data="2021-11-28" class="news__posted">2021-10-28</time></li>
@@ -65,55 +120,55 @@
   
       </article>
       <!-- /news -->
-  
+
       <article class="recommend">
-        <h2 class="article-heading topPage-title">おすすめ商品</h2>
+        <div class="article-heading__wrapper">
+          <h2 class="article-heading topPage-title">おすすめ商品</h2>
+        </div>
   
         <ul class="recommend__list">
           <li class="recommend__card">
-            <a href="#" class="recommend__wrapper">
-              <div class="recommend__image">
-                <img src="" alt="【焼印付】爪とぎ型キーホルダー">
-              </div>
-  
-              <h3 class="recommend__title">【焼印付】爪とぎ型キーホルダー</h3>
-              <p class="recommend__text">可愛らしいミニチュアサイズの「猫の爪とぎ」型キーホルダー。木製ケースの裏面には猫シルエットの焼印付きでオシャレ！</p>
-              <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
-              <a href="#" class="btn recommend__link">詳細を見る</a>
-            </a>
+            <div class="recommend__image">
+              <img src="images/dmy_pd001.jpg" alt="【焼印付】爪とぎ型キーホルダー">
+            </div>
+
+            <h3 class="recommend__title">【焼印付】爪とぎ型キーホルダー</h3>
+            <p class="recommend__text">可愛らしいミニチュアサイズの「猫の爪とぎ」型キーホルダー。木製ケースの裏面には猫シルエットの焼印付きでオシャレ！</p>
+            <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
+            <a href="#" class="btn btn-more recommend__link">詳細を見る</a>
+            
           </li>
           
           <li class="recommend__card">
-            <a href="#" class="recommend__wrapper">
-              <div class="recommend__image">
-                <img src="" alt="肉球ブローチ（7個セット）">
-              </div>
-  
-              <h3 class="recommend__title">肉球ブローチ（7個セット）</h3>
-              <p class="recommend__text">定番の肉球型のレジンブローチ（7個セット）です。</p>
-              <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
-              <a href="#" class="btn recommend__link">詳細を見る</a>
-            </a>
+            <div class="recommend__image">
+              <img src="images/dmy_pd002.jpg" alt="肉球ブローチ（7個セット）">
+            </div>
+
+            <h3 class="recommend__title">肉球ブローチ（7個セット）</h3>
+            <p class="recommend__text">定番の肉球型のレジンブローチ（7個セット）です。</p>
+            <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
+            <a href="#" class="btn btn-more recommend__link">詳細を見る</a>
+            
           </li>
   
           <li class="recommend__card">
-            <a href="#" class="recommend__wrapper">
-              <div class="recommend__image">
-                <img src="" alt="レース猫首輪（鈴付き）">
-              </div>
-  
-              <h3 class="recommend__title">レース猫首輪（鈴付き）</h3>
-              <p class="recommend__text">アースカラーのレース＋アンティーク調の金具でシックな印象の猫首輪です。</p>
-              <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
-              <a href="#" class="btn recommend__link">詳細を見る</a>
-            </a>
+            <div class="recommend__image">
+              <img src="images/dmy_pd003.jpg" alt="レース猫首輪（鈴付き）">
+            </div>
+
+            <h3 class="recommend__title">レース猫首輪（鈴付き）</h3>
+            <p class="recommend__text">アースカラーのレース＋アンティーク調の金具でシックな印象の猫首輪です。</p>
+            <p class="recommend__price">000円<span class="recommend__tax">（税抜）</span></p>
+            <a href="#" class="btn btn-more recommend__link">詳細を見る</a>
           </li>
   
         </ul>
       </article>
   
       <article class="category">
-        <h2 class="article-heading topPage-title">商品カテゴリー</h2>
+        <div class="article-heading__wrapper">
+          <h2 class="article-heading topPage-title">商品カテゴリー</h2>
+        </div>
   
         <div class="category__wrapper">
           <div class="category__body">
@@ -165,10 +220,13 @@
         <!-- /category__wrapper -->
   
       </article>
-  
-      <section class="shops">
+    </section>
+
+
+    <section class="shops bg--color">
+      <div class="inner">
         <h2 class="section-title topPage-title">委託販売先</h2>
-  
+
         <p class="shops__heading-text">当店は現在以下の3店舗のレンタルボックスにて委託販売をさせていただいております。<br>商品を実際に手にとってお確かめいただけますので、お近くの方はお気軽にお立ち寄り下さい。</p>
   
         <div class="shops__contents">
@@ -233,7 +291,7 @@
     
                 <tr>
                   <th>Instagram</th>
-                  <td><a href="#">https://www.instagram.com/mays._.cafe/</a></td>
+                  <!-- <td><a href="#">https://www.instagram.com/mays._.cafe/</a></td> -->
                 </tr>
               </table>
             </div>
@@ -277,56 +335,63 @@
   
         </div>
         <!-- /shops__contents -->
-      </section>
-  
-      <section class="profile">
-        <h2 class="section-title topPage-title">プロフィール</h2>
-  
-        <figure class="profile__image">
-          <img src="images" alt="@latelierqueue">
-        </figure>
-  
-        <p class="profile__name">@latelierqueue</p>
-        <p class="profile__text">猫雑貨・猫おもちゃ、その他ハンドメイド<br>時々農家になります。</p>
-  
-        <div class="sns-image">
-          <img src="images" alt="twitter">
-          <img src="images" alt="Instagram">
-        </div>
-      </section>
-    </div>
+      </div>
+      <!-- /inner -->
+
+    </section>
+
+    <section class="profile">
+      <h2 class="section-title topPage-title">プロフィール</h2>
+
+      <figure class="profile__image">
+        <img src="images" alt="@latelierqueue">
+      </figure>
+
+      <p class="profile__name">@latelierqueue</p>
+      <p class="profile__text">猫雑貨・猫おもちゃ、その他ハンドメイド<br>時々農家になります。</p>
+
+      <div class="sns-image">
+        <img src="images" alt="twitter">
+        <img src="images" alt="Instagram">
+      </div>
+    </section>
 
   </main>
 
   <footer class="footer">
-    <figure>
-      <img src="images" alt="ハンドメイド猫グッズのお店" class="footer__logo">
-    </figure>
+    <div class="inner">
+      <figure class="footer__logo">
+        <img src="images/logo_footer.svg" alt="ハンドメイド猫グッズのお店">
+      </figure>
 
-    <nav class="footer-nav">
-      <ul class="footer-nav__items">
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">トップページ</a></li>
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">商品一覧</a></li>
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">ねこブログ</a></li>
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">ねこ店員紹介</a></li>
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">よくあるご質問</a></li>
-        <li class="footer-nav__list"><a href="#" class="footer-nav__links">お問い合わせ</a></li>
-      </ul>
-    </nav>
+      <nav class="footer-nav sp-nav__body">
+        <ul class="footer-nav__items sp-nav__items">
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">トップページ</a></li>
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">商品一覧</a></li>
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">ねこブログ</a></li>
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">ねこ店員紹介</a></li>
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">よくあるご質問</a></li>
+          <li class="footer-nav__list sp-nav__list"><a href="#" class="footer-nav__link sp-nav__link">お問い合わせ</a></li>
+        </ul>
+      </nav>
 
-    <div class="footer__link-wrapper">
-      <a href="#" class="footer_low">特定商取引法に関する表記</a>
-      <a href="#" class="footer_policy">プライバシーポリシー</a>
+      <div class="sp-nav__sub-link-wrapper footer__sub-link-wrapper">
+        <a href="#" class="sp-nav__low footer__low">特定商取引法に関する表記</a>
+        <a href="#" class="sp-nav__policy">プライバシーポリシー</a>
+      </div>
+  
+      <p class="footer__copy">&copy; l’atelier Queue All Rights Reserved. 2021</p>
     </div>
 
-    <p class="footer__copy">
-      <small>&copy; l’atelier Queue All Rights Reserved. 2021</small>
-    </p>
 
-    <a href="#" id="toTop" class="toTop"><small>PAGE TOP</small></a>
+
+    <!-- <a href="#" id="toTop" class="toTop"><small>PAGE TOP</small></a> -->
   
   </footer>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
